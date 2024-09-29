@@ -13,7 +13,8 @@ const MyDataTable = () => {
     let table;
 
     // Fetch data and initialize DataTable
-    fetch(`${process.env.PUBLIC_URL}/notearkiv_eksport.json`)
+    //fetch(`${process.env.PUBLIC_URL}/notearkiv_eksport.json`)
+    fetch(`https://raw.githubusercontent.com/chrish/tvsk-notearkiv-data/refs/heads/main/spreadsheet_data.json`)
       .then((response) => response.json())
       .then((jsonData) => {
         // Create HTML table body with correct property names
@@ -21,11 +22,11 @@ const MyDataTable = () => {
           .map(
             (row) => `
           <tr>
-            <td>${row.Tittel}</td>
-            <td>${row.Sjanger}</td>
-            <td>${row.Komponist}</td>
-            <td>${row.Arrangør}</td>
-            <td>${row.Arkivnr}</td>
+            <td>${row[0]}</td>
+            <td>${row[1]}</td>
+            <td>${row[2]}</td>
+            <td>${row[3]}</td>
+            <td>${row[4]}</td>
           </tr>
         `
           )
