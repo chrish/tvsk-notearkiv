@@ -44,7 +44,7 @@ const MyDataTable = () => {
         table = $(tableRef.current).DataTable({
           responsive: true,
           select: false,
-          pageLength: 100,
+          paging: false,
           // Other options if needed
         });
       })
@@ -60,7 +60,8 @@ const MyDataTable = () => {
 
   return (
     <div>
-      <h1>Notearkiv TVSK</h1>
+      <h1 class="tvskh1">Notearkiv TVSK</h1>
+      
       <table class="noteTable" ref={tableRef} className="display" style={{ width: '100%' }}>
         <thead>
           <tr>

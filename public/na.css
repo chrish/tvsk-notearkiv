@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.dt-layout-row{
+  padding: 10px 0px;
+}
+
+.tvskh1{
+  background-image: url('/tvsk_logo_small.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 50px;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 60px;
+}
+
+table.dataTable{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table.dataTable td{
+  height: 40px;
+  vertical-align: middle;
+}
+
+
+.dt-search input{
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  margin-left: 5px;
+}
+
+table.dataTable tbody tr:nth-child(even) {
+  background-color: #dddddd;
+  border: none;
+  min-height: 500px;
+}
+table.dataTable tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+  border: none;
+}
+
+table.dataTable tbody tr:hover {
+  background-color: #000dff !important;
+  color: #ffffff;
+}
+
+div#root{
+  padding: 10px;
+}
