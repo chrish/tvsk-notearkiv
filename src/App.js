@@ -61,7 +61,7 @@ const MyDataTable = () => {
   return (
     <div>
       <h1 class="tvskh1">Notearkiv TVSK</h1>
-      
+      <p>Kode på github.com/chrish/tvsk-notearkiv, data eksporteres daglig klokken 20 til github.com/chrish/tvsk-notearkiv-data</p>
       <table class="noteTable" ref={tableRef} className="display" style={{ width: '100%' }}>
         <thead>
           <tr>
