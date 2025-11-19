@@ -27,6 +27,8 @@ const MyDataTable = () => {
             <td>${row[2]}</td>
             <td>${row[3]}</td>
             <td>${row[4]}</td>
+            <td>${row[5]}</td>
+            <td>${row[6]}</td>
           </tr>
         `
           )
@@ -67,9 +69,11 @@ const MyDataTable = () => {
           <tr>
             <th>Tittel <SwapVertIcon /></th>
             <th>Sjanger/kommentar <SwapVertIcon /></th>
+            <th>Type <SwapVertIcon /></th>
             <th>Komponist <SwapVertIcon /></th>
             <th>Arrangør <SwapVertIcon /></th>
             <th>Arkivnummer <SwapVertIcon /></th>
+            <th>Scannet? X-XX Disk/Tutti <SwapVertIcon /></th>
           </tr>
         </thead>
         <tbody></tbody>
