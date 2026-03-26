@@ -24,6 +24,10 @@
   color: white;
 }
 
+th span{
+  font-weight: normal;
+}
+
 .App-link {
   color: #61dafb;
 }
