@@ -47,6 +47,34 @@ const MyDataTable = () => {
           responsive: true,
           select: false,
           paging: false,
+          columnDefs: [
+            {
+              targets: 5, // your column index
+              render: function (data, type, row) {
+                if (type === 'sort' || type === 'type') {
+                  if (data == null || data === '') return 999999999;
+
+                  const text = String(data).trim();
+
+                  // Pure number: 1, 2, 10
+                  if (/^\d+$/.test(text)) {
+                    return parseInt(text, 10);
+                  }
+
+                  // H-number: H1, H2, H10
+                  const hMatch = text.match(/^H(\d+)$/i);
+                  if (hMatch) {
+                    return 1000000 + parseInt(hMatch[1], 10);
+                  }
+
+                  // Fallback for other text values
+                  return 999999999;
+                }
+
+                return data;
+              }
+            }
+          ]
           // Other options if needed
         });
       })
